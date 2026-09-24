@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: toiladanit
+      POSTGRES_PASSWORD: toiladanit@123
+      POSTGRES_DB: plannova
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+#docker compose up -d
+#username: toiladanit   
+#password: toiladanit@123

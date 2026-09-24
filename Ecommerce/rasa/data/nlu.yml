@@ -1,0 +1,66 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - xin chào
+    - chào shop
+    - hello
+    - bot ơi
+    - tôi cần hỗ trợ
+
+- intent: goodbye
+  examples: |
+    - tạm biệt
+    - cảm ơn, tôi đi đây
+    - hẹn gặp lại
+
+- intent: thanks
+  examples: |
+    - cảm ơn
+    - cảm ơn bạn
+    - rất hữu ích
+
+- intent: ask_products
+  examples: |
+    - shop có những sản phẩm gì
+    - xem sản phẩm
+    - tìm sản phẩm cho tôi
+    - cửa hàng bán gì
+    - tôi muốn mua sản phẩm
+
+- intent: ask_price
+  examples: |
+    - sản phẩm này giá bao nhiêu
+    - cho tôi hỏi giá
+    - có giảm giá không
+    - sản phẩm nào đang khuyến mãi
+    - xem giá sản phẩm
+
+- intent: ask_shipping
+  examples: |
+    - phí giao hàng bao nhiêu
+    - shop giao hàng như thế nào
+    - bao lâu thì nhận được hàng
+    - có giao hàng nhanh không
+    - phí vận chuyển
+
+- intent: ask_order
+  examples: |
+    - xem đơn hàng của tôi
+    - đơn hàng đang ở đâu
+    - kiểm tra trạng thái đơn
+    - tôi muốn xem đơn đã đặt
+
+- intent: ask_payment
+  examples: |
+    - shop có những phương thức thanh toán nào
+    - có thanh toán khi nhận hàng không
+    - thanh toán bằng momo được không
+    - tôi muốn chuyển khoản
+
+- intent: fallback
+  examples: |
+    - thời tiết hôm nay
+    - kể chuyện cho tôi
+    - bạn có thể làm gì khác

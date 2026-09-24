@@ -1,0 +1,39 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - ask_products
+  - ask_price
+  - ask_shipping
+  - ask_order
+  - ask_payment
+  - fallback
+
+responses:
+  utter_greet:
+    - text: "Xin chào! Tôi có thể giúp bạn tìm sản phẩm, hỏi giá, giao hàng hoặc kiểm tra đơn hàng."
+  utter_goodbye:
+    - text: "Cảm ơn bạn đã ghé cửa hàng. Chúc bạn mua sắm vui vẻ!"
+  utter_thanks:
+    - text: "Rất vui được hỗ trợ bạn!"
+  utter_ask_products:
+    - text: "Bạn có thể vào mục Sản phẩm để xem danh sách, lọc theo danh mục và mở chi tiết từng sản phẩm."
+  utter_ask_price:
+    - text: "Bạn hãy gửi tên sản phẩm hoặc mở trang chi tiết để xem giá, giảm giá và tồn kho mới nhất."
+  utter_ask_shipping:
+    - text: "Cửa hàng có giao tiêu chuẩn miễn phí và giao nhanh với phí 50.000đ. Bạn sẽ chọn phương thức khi thanh toán."
+  utter_ask_order:
+    - text: "Bạn có thể xem trạng thái đơn trong mục Đơn hàng sau khi đăng nhập."
+  utter_ask_payment:
+    - text: "Hiện cửa hàng hỗ trợ COD, chuyển khoản ngân hàng và ví MoMo."
+  utter_fallback:
+    - text: "Tôi chưa hiểu câu hỏi này. Bạn có thể hỏi về sản phẩm, giá, giao hàng, thanh toán hoặc đơn hàng."
+
+actions:
+  - action_personalized_help
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

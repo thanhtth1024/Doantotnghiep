@@ -1,0 +1,18 @@
+recipe: default.v1
+language: vi
+
+pipeline:
+- name: WhitespaceTokenizer
+- name: CountVectorsFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 3
+  max_ngram: 17
+- name: DIETClassifier
+  epochs: 80
+  constrain_similarities: true
+- name: EntitySynonymMapper
+
+policies:
+- name: RulePolicy
+assistant_id: 20260924-174838-gritty-paste
